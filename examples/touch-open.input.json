@@ -1,0 +1,39 @@
+{
+  "profile": "explicit-semver-bounds/1",
+  "synthetic": true,
+  "scenarios": [
+    {
+      "id": "touch-open",
+      "constraints": [
+        {
+          "id": "b0",
+          "lower": {
+            "version": "1.0.0",
+            "inclusive": true
+          },
+          "upper": {
+            "version": "2.0.0",
+            "inclusive": true
+          }
+        },
+        {
+          "id": "b1",
+          "lower": {
+            "version": "2.0.0",
+            "inclusive": false
+          },
+          "upper": {
+            "version": "3.0.0",
+            "inclusive": true
+          }
+        }
+      ],
+      "candidates": [
+        {
+          "id": "v0",
+          "version": "2.0.0"
+        }
+      ]
+    }
+  ]
+}

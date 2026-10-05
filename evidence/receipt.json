@@ -1,0 +1,342 @@
+{
+  "date": "2026-10-05T10:01:41.277572+00:00",
+  "runtime": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "win32",
+  "counts": {
+    "normal": 22,
+    "optimized": 22
+  },
+  "frozen_cases": 45,
+  "complete_frozen_cases": 33,
+  "actual_cli_cases_per_mode": 45,
+  "checks": [
+    {
+      "check": "normal",
+      "exit": 0
+    },
+    {
+      "check": "optimized",
+      "exit": 0
+    },
+    {
+      "check": "compile",
+      "exit": 0
+    },
+    {
+      "check": "mutations",
+      "exit": 0
+    },
+    {
+      "check": "restored",
+      "exit": 0
+    },
+    {
+      "check": "growth",
+      "exit": 0
+    },
+    {
+      "check": "bandit-production",
+      "exit": 0
+    },
+    {
+      "check": "bandit-harness",
+      "exit": 1
+    },
+    {
+      "check": "example-build-equal.input",
+      "exit": 0
+    },
+    {
+      "check": "example-non-dense.input",
+      "exit": 0
+    },
+    {
+      "check": "example-tied-lower.input",
+      "exit": 0
+    },
+    {
+      "check": "example-touch-closed.input",
+      "exit": 0
+    },
+    {
+      "check": "example-touch-open.input",
+      "exit": 0
+    },
+    {
+      "check": "example-vacuous.input",
+      "exit": 0
+    }
+  ],
+  "examples": [
+    "build-equal.input.json",
+    "non-dense.input.json",
+    "tied-lower.input.json",
+    "touch-closed.input.json",
+    "touch-open.input.json",
+    "vacuous.input.json"
+  ],
+  "growth": {
+    "measurements": [
+      {
+        "version_chars": 7,
+        "native_status": "complete",
+        "raw_bytes": 17013,
+        "byte_status": "complete",
+        "report_bytes": 165384,
+        "checks": 1024,
+        "constraints": 64,
+        "candidates": 128,
+        "version_occurrences": 256
+      },
+      {
+        "version_chars": 128,
+        "native_status": "complete",
+        "raw_bytes": 47989,
+        "byte_status": "complete",
+        "report_bytes": 213784,
+        "checks": 1024,
+        "constraints": 64,
+        "candidates": 128,
+        "version_occurrences": 256
+      },
+      {
+        "version_chars": 185,
+        "native_status": "complete",
+        "raw_bytes": 62581,
+        "byte_status": "complete",
+        "report_bytes": 236584,
+        "checks": 1024,
+        "constraints": 64,
+        "candidates": 128,
+        "version_occurrences": 256
+      },
+      {
+        "version_chars": 256,
+        "native_status": "complete",
+        "raw_bytes": 80757,
+        "byte_status": "limit",
+        "report_bytes": 264984,
+        "checks": 1024,
+        "constraints": 64,
+        "candidates": 128,
+        "version_occurrences": 256
+      }
+    ],
+    "conservative_upper_bytes": 436992,
+    "incomplete_upper_bytes": 14464,
+    "output_cap": 1048576,
+    "cap_reachable_by_admitted_reports": false,
+    "note": "Loose structural proof, not measured exact maximum. Reduced-cap tests are delivery seams."
+  },
+  "mutations": {
+    "outcomes": [
+      {
+        "mutation": "tied-inclusion",
+        "target": "tied-lower",
+        "exit": 1,
+        "intended_assertion_detected": true
+      },
+      {
+        "mutation": "weak-lower",
+        "target": "strongest-lower",
+        "exit": 1,
+        "intended_assertion_detected": true
+      },
+      {
+        "mutation": "intersection-or",
+        "target": "two-incompatible",
+        "exit": 1,
+        "intended_assertion_detected": true
+      },
+      {
+        "mutation": "drop-tied-provenance",
+        "target": "all-tied-three",
+        "exit": 1,
+        "intended_assertion_detected": true
+      },
+      {
+        "mutation": "build-tiebreak",
+        "target": "build-equal",
+        "exit": 1,
+        "intended_assertion_detected": true
+      }
+    ],
+    "original_unchanged": true,
+    "original_sha256": {
+      "admission.py": "fdbed43d90614247bd3bf408ffae90897855152928b0ea8f909c2a5648a123ad",
+      "bounds.py": "82a512914ececcbfa0e9c501d791521b8c0c1701107558948f82a5815651eff1",
+      "cli.py": "6ba6bbfeb5d8851b8f4063a0db1acea50d7fb2cc2121ad508a8bb2c1986754db",
+      "model.py": "b7e6094d3c33bd34693528f56d5fc743243f3c19f193dacc9ede27273647eaae",
+      "version.py": "16f6027ee69b83d97bc821e2c76881ae5a3e780f1f465356ad98ef101ed26a13",
+      "__init__.py": "c46ac1b118bbe2a9da60fd0ff9568a7c24ea225df25bef16972799198f648779"
+    },
+    "work": "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\dependency-constraint-lab\\.verification-work\\mutations-c6f0d1c360a24a46a7f746962fad5b7b"
+  },
+  "source_sha256": [
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5101,
+      "sha256": "0d485a0c913f7268cbe609c40b22afe90aa8021fa3203277ec3536844f19941d"
+    },
+    {
+      "path": "lab.py",
+      "bytes": 250,
+      "sha256": "84df307f19be8ab2ecdd7705b2f1b208b8499990116f04e0a0e6770747c2274e"
+    },
+    {
+      "path": "tests/cases.json",
+      "bytes": 169229,
+      "sha256": "b385be9e0d2dbeaec969e79fc5c9ed27c60f159432e2f2b9d3387787134ffc62"
+    },
+    {
+      "path": "evidence/freeze.json",
+      "bytes": 637,
+      "sha256": "2c26773de5fd66992193ab9b1eefcfbef8a10214bc44c9089dc9d3db9e126664"
+    },
+    {
+      "path": "research/reuse-receipt.json",
+      "bytes": 915,
+      "sha256": "f1ca48d8080c8747c56684078d3d8e0863c6926a3d5d6fa0737dd70872f90996"
+    },
+    {
+      "path": "constraint_lab/__init__.py",
+      "bytes": 71,
+      "sha256": "c46ac1b118bbe2a9da60fd0ff9568a7c24ea225df25bef16972799198f648779"
+    },
+    {
+      "path": "constraint_lab/admission.py",
+      "bytes": 7939,
+      "sha256": "fdbed43d90614247bd3bf408ffae90897855152928b0ea8f909c2a5648a123ad"
+    },
+    {
+      "path": "constraint_lab/bounds.py",
+      "bytes": 1377,
+      "sha256": "82a512914ececcbfa0e9c501d791521b8c0c1701107558948f82a5815651eff1"
+    },
+    {
+      "path": "constraint_lab/cli.py",
+      "bytes": 3155,
+      "sha256": "6ba6bbfeb5d8851b8f4063a0db1acea50d7fb2cc2121ad508a8bb2c1986754db"
+    },
+    {
+      "path": "constraint_lab/model.py",
+      "bytes": 4884,
+      "sha256": "b7e6094d3c33bd34693528f56d5fc743243f3c19f193dacc9ede27273647eaae"
+    },
+    {
+      "path": "constraint_lab/version.py",
+      "bytes": 3515,
+      "sha256": "16f6027ee69b83d97bc821e2c76881ae5a3e780f1f465356ad98ef101ed26a13"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "bytes": 5004,
+      "sha256": "895176603d2f8ce5a420ab74bda626f168ab165153db7347be2d41f362c963d8"
+    },
+    {
+      "path": "tests/test_model.py",
+      "bytes": 11005,
+      "sha256": "85bc0248e939e6b0213d02b4cd2cc61747ecdc3e30b3562f69c348c2c943c9dd"
+    },
+    {
+      "path": "scripts/freeze_oracles.py",
+      "bytes": 10881,
+      "sha256": "e01f200ee1bb5ce3e41ae78611c8c3c7246a0303cc6ad1f1d781fade29fa8814"
+    },
+    {
+      "path": "scripts/measure_growth.py",
+      "bytes": 2286,
+      "sha256": "6cb79d8d85cc3deedb36ad750067c20d89f44f7285b4663b99eee14f43eb8858"
+    },
+    {
+      "path": "scripts/run_tests.py",
+      "bytes": 368,
+      "sha256": "841deb729181fa691568690fca76ab53a5355557900783a5a6408dbec5b6ed37"
+    },
+    {
+      "path": "scripts/verify_mutations.py",
+      "bytes": 2770,
+      "sha256": "658c71ba86f864aa662548cd40b3db15ca1087d01b9bca55a658a19ae9130e20"
+    },
+    {
+      "path": "scripts/verify_project.py",
+      "bytes": 6403,
+      "sha256": "c8d32702f76a5a03d53e7cdebb8fb0ed8787bb6cdd9a16dcd09c2ac9c3bfae63"
+    },
+    {
+      "path": "examples/build-equal.expected.json",
+      "bytes": 2532,
+      "sha256": "c68be1b1885cfbac308c197c137a5da03a693b95b9072ccf8d35a26b5d1768ee"
+    },
+    {
+      "path": "examples/build-equal.input.json",
+      "bytes": 534,
+      "sha256": "0d63856389d8f5aaeb330ec56e1d49278a0dd9e7030dce7941ebb8b9b57f0c42"
+    },
+    {
+      "path": "examples/non-dense.expected.json",
+      "bytes": 2942,
+      "sha256": "7e99a8c3fbfd045b875d0dd60e668e3180f52f2433e63742e36f2e7e275e5a62"
+    },
+    {
+      "path": "examples/non-dense.input.json",
+      "bytes": 608,
+      "sha256": "83803161b99fcf21d6b62b9b942eccc4dc5dbf277072fc254245f8eb71a2ed31"
+    },
+    {
+      "path": "examples/tied-lower.expected.json",
+      "bytes": 2766,
+      "sha256": "7d416f3712747fddd08328b19273dbfb8d14f7536827553532e312956d8a0a63"
+    },
+    {
+      "path": "examples/tied-lower.input.json",
+      "bytes": 627,
+      "sha256": "91341db13b9127e8f686a92c289baa352380d6f71d0f3a44f6410d74dcebe2d5"
+    },
+    {
+      "path": "examples/touch-closed.expected.json",
+      "bytes": 3030,
+      "sha256": "d2af26353ad2750af83ee6ef07b8c1e5d2d6c9f191dc39a26033ddbdfb894e3e"
+    },
+    {
+      "path": "examples/touch-closed.input.json",
+      "bytes": 770,
+      "sha256": "f700edde39017d32500cecd052c8a39bdc4eeadc5c85eec5d647fe2d901e45a8"
+    },
+    {
+      "path": "examples/touch-open.expected.json",
+      "bytes": 3007,
+      "sha256": "29885010c2a9eec9910577e75935872cf41e8780c63bb3e68410d7c96aa7ac7f"
+    },
+    {
+      "path": "examples/touch-open.input.json",
+      "bytes": 765,
+      "sha256": "f103cea3596570ee849d4c1a7afa034a614bcceb256b659542a0141069f3fa28"
+    },
+    {
+      "path": "examples/vacuous.expected.json",
+      "bytes": 1477,
+      "sha256": "e0ca021534ff73574493a10e6e827bc4985f7223bd7abdbc0a2e51ca6f05d1bc"
+    },
+    {
+      "path": "examples/vacuous.input.json",
+      "bytes": 264,
+      "sha256": "ca30d6638bc7df399583729d9a3b86c9de8b36901126f339e9eb54661b990b06"
+    }
+  ],
+  "finite_domain": {
+    "rank_memberships": 500,
+    "two_constraint_shapes": 36,
+    "permutations_and_duplicates": true
+  },
+  "bandit": {
+    "production_findings": 0,
+    "production_errors": 0,
+    "harness_findings": 7,
+    "harness_errors": 0
+  },
+  "pure_source_gate": "PASS; static inspection only",
+  "hosted": "NOT RUN",
+  "real_packages": false,
+  "raw_directory": "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\dependency-constraint-lab\\.verification-work\\acceptance-59a47daaba9647f28e2bd6339345f27c"
+}

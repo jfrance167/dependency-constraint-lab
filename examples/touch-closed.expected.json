@@ -1,0 +1,122 @@
+{
+  "schema": "constraint-membership-report/1",
+  "input_profile": "explicit-semver-bounds/1",
+  "status": "complete",
+  "evaluation": "complete",
+  "assurances": {
+    "policy": "strict-bounded-semver",
+    "prereleases": "all-admitted",
+    "build_metadata": "ignored-for-precedence",
+    "candidate_domain": "supplied-only",
+    "package_existence": "unknown",
+    "availability": "unknown",
+    "compatibility": "unknown",
+    "security": "unknown",
+    "unsupplied_candidate_existence": "unknown"
+  },
+  "limits": {
+    "raw_bytes": 65536,
+    "depth": 8,
+    "nodes": 4096,
+    "scenarios": 16,
+    "constraints_per_scenario": 8,
+    "candidates_per_scenario": 16,
+    "constraints": 64,
+    "candidates": 128,
+    "version_occurrences": 256,
+    "version_chars": 256,
+    "numeric_digits": 32,
+    "identifiers": 16,
+    "identifier_chars": 64,
+    "output_bytes": 1048576
+  },
+  "scenarios": [
+    {
+      "id": "touch-closed",
+      "index": 0,
+      "constraints": [
+        {
+          "index": 0,
+          "id": "b0",
+          "lower": {
+            "version": "1.0.0",
+            "inclusive": true
+          },
+          "upper": {
+            "version": "2.0.0",
+            "inclusive": true
+          }
+        },
+        {
+          "index": 1,
+          "id": "b1",
+          "lower": {
+            "version": "2.0.0",
+            "inclusive": true
+          },
+          "upper": {
+            "version": "3.0.0",
+            "inclusive": true
+          }
+        }
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "id": "v0",
+          "version": "2.0.0+tag",
+          "checks": [
+            {
+              "constraint_index": 0,
+              "lower_relation": "greater",
+              "upper_relation": "equal",
+              "lower_pass": true,
+              "upper_pass": true,
+              "matches": true
+            },
+            {
+              "constraint_index": 1,
+              "lower_relation": "equal",
+              "upper_relation": "less",
+              "lower_pass": true,
+              "upper_pass": true,
+              "matches": true
+            }
+          ],
+          "intersection_matches": true
+        }
+      ],
+      "effective_lower": {
+        "version": "2.0.0",
+        "inclusive": true,
+        "contributors": [
+          {
+            "index": 1,
+            "id": "b1",
+            "version": "2.0.0",
+            "inclusive": true
+          }
+        ]
+      },
+      "effective_upper": {
+        "version": "2.0.0",
+        "inclusive": true,
+        "contributors": [
+          {
+            "index": 0,
+            "id": "b0",
+            "version": "2.0.0",
+            "inclusive": true
+          }
+        ]
+      },
+      "bounds_relation": "equal_closed",
+      "bounds_contradiction": false,
+      "supplied_match_indices": [
+        0
+      ],
+      "supplied_set_empty": false
+    }
+  ],
+  "error": null
+}

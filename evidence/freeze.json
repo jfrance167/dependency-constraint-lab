@@ -1,0 +1,22 @@
+{
+  "method": "handwritten ranks, pass bits, explicit contributors; no product imports",
+  "full_reports": 45,
+  "complete_reports": 33,
+  "files": [
+    {
+      "path": "CONTRACT.md",
+      "bytes": 5101,
+      "sha256": "0d485a0c913f7268cbe609c40b22afe90aa8021fa3203277ec3536844f19941d"
+    },
+    {
+      "path": "tests/cases.json",
+      "bytes": 169229,
+      "sha256": "b385be9e0d2dbeaec969e79fc5c9ed27c60f159432e2f2b9d3387787134ffc62"
+    },
+    {
+      "path": "scripts/freeze_oracles.py",
+      "bytes": 10881,
+      "sha256": "e01f200ee1bb5ce3e41ae78611c8c3c7246a0303cc6ad1f1d781fade29fa8814"
+    }
+  ]
+}

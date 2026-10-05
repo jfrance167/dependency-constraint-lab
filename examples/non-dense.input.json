@@ -1,0 +1,32 @@
+{
+  "profile": "explicit-semver-bounds/1",
+  "synthetic": true,
+  "scenarios": [
+    {
+      "id": "non-dense",
+      "constraints": [
+        {
+          "id": "b0",
+          "lower": {
+            "version": "1.0.0-a",
+            "inclusive": false
+          },
+          "upper": {
+            "version": "1.0.0-a.0",
+            "inclusive": false
+          }
+        }
+      ],
+      "candidates": [
+        {
+          "id": "v0",
+          "version": "1.0.0-a"
+        },
+        {
+          "id": "v1",
+          "version": "1.0.0-a.0"
+        }
+      ]
+    }
+  ]
+}

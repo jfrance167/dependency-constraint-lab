@@ -1,0 +1,58 @@
+{
+  "schema": "constraint-membership-report/1",
+  "input_profile": "explicit-semver-bounds/1",
+  "status": "complete",
+  "evaluation": "complete",
+  "assurances": {
+    "policy": "strict-bounded-semver",
+    "prereleases": "all-admitted",
+    "build_metadata": "ignored-for-precedence",
+    "candidate_domain": "supplied-only",
+    "package_existence": "unknown",
+    "availability": "unknown",
+    "compatibility": "unknown",
+    "security": "unknown",
+    "unsupplied_candidate_existence": "unknown"
+  },
+  "limits": {
+    "raw_bytes": 65536,
+    "depth": 8,
+    "nodes": 4096,
+    "scenarios": 16,
+    "constraints_per_scenario": 8,
+    "candidates_per_scenario": 16,
+    "constraints": 64,
+    "candidates": 128,
+    "version_occurrences": 256,
+    "version_chars": 256,
+    "numeric_digits": 32,
+    "identifiers": 16,
+    "identifier_chars": 64,
+    "output_bytes": 1048576
+  },
+  "scenarios": [
+    {
+      "id": "vacuous",
+      "index": 0,
+      "constraints": [],
+      "candidates": [
+        {
+          "index": 0,
+          "id": "v0",
+          "version": "1.0.0",
+          "checks": [],
+          "intersection_matches": true
+        }
+      ],
+      "effective_lower": null,
+      "effective_upper": null,
+      "bounds_relation": "unconstrained",
+      "bounds_contradiction": false,
+      "supplied_match_indices": [
+        0
+      ],
+      "supplied_set_empty": false
+    }
+  ],
+  "error": null
+}

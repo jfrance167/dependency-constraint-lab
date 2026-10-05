@@ -1,0 +1,7 @@
+{
+  "files": 27,
+  "credential_pattern_hits": 0,
+  "method": "Three narrow credential-pattern controls plus reviewed synthetic contents; not a dedicated secret scanner or exhaustive assurance",
+  "accepted_helper_hashes_unchanged": true,
+  "parent_tracked_changes_preserved": true
+}

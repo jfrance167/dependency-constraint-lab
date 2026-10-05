@@ -1,0 +1,28 @@
+{
+  "profile": "explicit-semver-bounds/1",
+  "synthetic": true,
+  "scenarios": [
+    {
+      "id": "build-equal",
+      "constraints": [
+        {
+          "id": "b0",
+          "lower": {
+            "version": "1.0.0+one",
+            "inclusive": true
+          },
+          "upper": {
+            "version": "1.0.0+two",
+            "inclusive": true
+          }
+        }
+      ],
+      "candidates": [
+        {
+          "id": "v0",
+          "version": "1.0.0+three"
+        }
+      ]
+    }
+  ]
+}

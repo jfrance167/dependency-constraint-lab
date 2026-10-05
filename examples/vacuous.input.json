@@ -1,0 +1,16 @@
+{
+  "profile": "explicit-semver-bounds/1",
+  "synthetic": true,
+  "scenarios": [
+    {
+      "id": "vacuous",
+      "constraints": [],
+      "candidates": [
+        {
+          "id": "v0",
+          "version": "1.0.0"
+        }
+      ]
+    }
+  ]
+}
