@@ -1,0 +1,4 @@
+# Preserve the original bytes sealed by evidence/freeze.json on every platform.
+/CONTRACT.md -text
+/tests/cases.json -text
+/scripts/freeze_oracles.py -text
